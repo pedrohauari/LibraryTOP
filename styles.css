@@ -1,0 +1,106 @@
+:root { 
+    --bg-color-dark: #16100c;
+    --bg-color-light: white;
+    --text-primary: white;
+    --text-secondary: black;
+    --book-btn-1: #2277a5;
+    --btn-color-1: #70b8d4;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+body { 
+    background-color: var(--bg-color-dark);
+}
+.button-div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+#new-book-btn { 
+    background-color: var(--book-btn-1);
+    color: var(--text-primary);
+    font-size: calc(100px - 1vw);
+    text-align: center;
+    border-radius: 20px;
+   height: calc(25vh - 30px);
+   width: calc(25vw - 50px);
+   font-weight: 700;
+   cursor: pointer;
+}
+.form-hidden { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form-hidden input{ 
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    color: var(--text-secondary);
+    width: calc(100vw - 70vw);
+    height: 10vh;
+    word-break: break-all;
+    word-wrap: wrap;
+}
+.form-hidden label { 
+    color: var(--text-primary);
+    font-size: 2.5rem;
+}
+.form-hidden span { 
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+.button-group button{ 
+    background-color: var(--btn-color-1);
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.card-container { 
+    background-color: var(--bg-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid rgba(128, 128, 128, 0.685);
+    width: calc(100vw - 80vw);
+    height: calc(100vh - 80vh);
+    padding: 20px;
+    margin: 40px;
+    word-wrap: wrap;
+    word-break: break-all;
+    text-align: center;
+}
+.card-container .card-header { 
+    padding: 20px;
+}
+.card-container .title { 
+    margin-bottom: 20px;
+}
+.card-container .pages { 
+    margin-bottom: 10px;
+}
+.card-container .read-status { 
+    margin-bottom: 20px;
+}
+.card-container .remove-btn { 
+    background-color: var(--btn-color-1);
+    color: var(--text-primary);
+    font-weight: 900;
+    cursor: pointer;
+}
+.card-container .read-btn { 
+    cursor: pointer;
+    background-color: var(--btn-color-1);
+    color: var(--text-primary);
+    font-weight: 700;
+    margin-left: 5px;
+
+}
